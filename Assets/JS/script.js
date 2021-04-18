@@ -79,5 +79,38 @@ var taskSubmitHandler = function(event) {
     inputEl10.value =  localStorage.getItem("task10");
 }
 
+var timeArr = ['8:00', '9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '16:00', '17:00', '18:00'];
+
+var inputArr = [inputEl1, inputEl2, inputEl3, inputEl4, inputEl5, inputEl6, inputEl7, inputEl8, inputEl9, inputEl10];
+
+inputEl1.setAttribute("data-time", timeArr[0]);
+inputEl2.setAttribute("data-time", timeArr[1]);
+inputEl3.setAttribute("data-time", timeArr[2]);
+inputEl4.setAttribute("data-time", timeArr[3]);
+inputEl5.setAttribute("data-time", timeArr[4]);
+inputEl6.setAttribute("data-time", timeArr[5]);
+inputEl7.setAttribute("data-time", timeArr[6]);
+inputEl8.setAttribute("data-time", timeArr[7]);
+inputEl9.setAttribute("data-time", timeArr[8]);
+inputEl10.setAttribute("data-time", timeArr[9]);
+
+var now = moment();
+
+var formatted = "h:mm";
+ 
+var finalDate = moment(timeArr[9], formatted);
+
+
+console.log(moment(finalDate).isBefore(now));
+
+
+for (var i = 0; i < timeArr.length; i++) {
+   
+    if (moment(finalDate).isBefore(now)) {
+        
+    }
+};
+
+
 taskFormEl.addEventListener("click", taskSubmitHandler);
 
