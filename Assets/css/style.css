@@ -64,6 +64,8 @@ textarea {
 	border-bottom-right-radius: 15px;
 	background-color: #06AED5;
 	color: white;
+	height: 100px;
+	vertical-align: top;
 }
 
 .saveBtn i:hover {
@@ -80,6 +82,14 @@ textarea {
 	vertical-align: top;
 }
 
-.eightmore {
+.timezne {
 	background-color: red;
+	width: 500px;
+	height: 100px;
+}
+
+.notyet {
+	background-color: #77dd77;
+	width: 500px;
+	height: 100px;
 }
